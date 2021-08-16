@@ -93,6 +93,7 @@ export default class ConfirmationCodeInput extends Component {
       codeArr: newCodeArr,
       currentIndex: index
     })
+    this.props.onCodeChange(newCodeArr.join(''))
   }
   
   _isMatchingCode(code, compareWithCode, ignoreCase = false) {
